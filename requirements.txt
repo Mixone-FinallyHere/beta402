@@ -6,7 +6,7 @@ django-suit
 Pillow
 django_compressor
 pygments
-pyPdf
+pyPdf2
 requests
 xmltodict
 djangorestframework
