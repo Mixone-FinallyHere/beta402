@@ -46,6 +46,7 @@ class CustomUserManager(UserManager):
         return self._create_user(netid, email, password, is_staff=True, **extra_fields)
 
 
+
 class User(AbstractBaseUser):
 
     USERNAME_FIELD = 'netid'
@@ -125,6 +126,9 @@ class User(AbstractBaseUser):
 
     def fullname(self):
         return self.name
+
+    def get_short_name(self):
+        return self.netid
 
 
 class Inscription(models.Model):
