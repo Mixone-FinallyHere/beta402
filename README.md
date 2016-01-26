@@ -23,11 +23,11 @@ You will also need to install GraphicsMagick (the binary 'gm') and LibreOffice/O
 
 For exemple on Debian/Ubuntu
 
-    sudo apt-get install graphicsmagick unoconv python-dev
+    sudo apt-get install graphicsmagick unoconv python-dev libjpeg-dev
 
 Or on Fedora
 
-    sudo dnf install GraphicsMagick unoconv python-devel
+    sudo dnf install GraphicsMagick unoconv python-devel libjpeg-devel
 
 ### Installation
 
