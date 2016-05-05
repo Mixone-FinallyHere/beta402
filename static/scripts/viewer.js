@@ -120,6 +120,8 @@ var viewer = function(doc) {
 
     var zoom_draw = function(z) {
         console.log(z);
+        // Sauvegarde du offset
+        var currentOffset = window.scrollY / window.scrollMaxY;
         if (z && z != zoom) {
             zoom = z;
             Cookies.set(COOKIE_NAME, zoom);
@@ -141,6 +143,8 @@ var viewer = function(doc) {
             });
 
             $('#top-page').width(600 * zoom / 100);
+            // On applique ancienne offset
+            window.scrollTo(0, window.scrollMaxY*currentOffset);
         }
     };
 
